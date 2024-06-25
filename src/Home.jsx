@@ -40,7 +40,7 @@ const Home = () => {
                 todos.length > 0 ?
 
                     todos.map(todo => (
-                        <div key={todo.id} className='task' style={{ background: "red", cursor: 'pointer' }}>
+                        <div key={todo.id} className='task' style={{ background: "purple", cursor: 'pointer' }}>
                             <div className='checkbox' onClick={() => handleEdit(todo._id)}>
                                 {todo.done ? <BsFillCheckCircleFill></BsFillCheckCircleFill>
                                     :

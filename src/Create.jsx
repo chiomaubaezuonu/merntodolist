@@ -9,6 +9,7 @@ const Create = () => {
 const handleAdd = () => {
 axios.post('http://localhost:3001/add', {task:task})
 .then(result =>{
+  console.log(result)
   window.location.reload()
 })
 .catch(err => console.log(err))
